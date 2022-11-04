@@ -48,7 +48,7 @@ while current_incorrect_guesses < num_of_incorrect_guesses and False in answer_g
     print()
 
     # Display puzzle board.
-    for current_letters_guessed in range(len(answer)):
+    for current_answer_index in range(len(answer)):
         if answer_guessed[current_answer_index]:
             print(answer[current_answer_index], end="")
         else:
